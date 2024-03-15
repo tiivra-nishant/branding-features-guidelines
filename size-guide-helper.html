@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Size Guide Helper</title>
+    <link rel="stylesheet" href="./size-guide-helper.css" />
+  </head>
+  <body>
+    <h1>Size Guide Helper</h1>
+    <div class="size-guide-helper-section-parent">
+      <div class="size-guide-helper-form">
+        <form id="sizeGuideForm">
+          <!-- <h2>Helmet</h2> -->
+          <label for="helmetSizeInput">Enter your head size (in cm)</label>
+          <input
+            type="number"
+            id="helmetSizeInput"
+            name="helmetSizeInput"
+            placeholder="55"
+            step="0.01"
+          />
+          <!-- <h2>Gloves</h2> -->
+          <label for="gloveSizeInput">Enter your palm size (in inches)</label>
+          <input
+            type="number"
+            id="gloveSizeInput"
+            name="gloveSizeInput"
+            placeholder="7.5"
+            step="0.01"
+          />
+          <!-- <h2>Arm Sleeves</h2> -->
+          <label for="sleeveSizeInput"
+            >Enter your upper arm circumference (in inches)</label
+          >
+          <input
+            type="number"
+            id="sleeveSizeInput"
+            name="sleeveSizeInput"
+            placeholder="10"
+            step="0.01"
+          />
+          <!-- <h2>Jerseys</h2> -->
+          <label for="jerseySizeInput"
+            >Enter your jersey neck size (in inches)</label
+          >
+          <input
+            type="number"
+            id="jerseySizeInput"
+            name="jerseySizeInput"
+            placeholder="14"
+            step="0.01"
+          />
+          <!-- <h2>Compression Socks</h2> -->
+          <label for="sockSizeInput">Enter your shoe size (UK)</label>
+          <input
+            type="number"
+            id="sockSizeInput"
+            name="sockSizeInput"
+            placeholder="6.5"
+            step="0.01"
+          />
+          <button id="size-guide-helper-submit" type="submit">
+            Check your size
+          </button>
+        </form>
+      </div>
+      <div class="primary-page-link">
+        <a href="./helmet-feature-test.html">
+          <button class="primary-page-button">
+            View Feature Tests
+          </button>
+        </a>
+      </div>
+      <div class="size-guide-helper-output">
+        <div id="size-guide-helper-result"></div>
+      </div>
+    </div>
+    <script src="./size-guide-helper.js"></script>
+    <script>
+      var sizeGuideForm = document.getElementById("sizeGuideForm");
+      function formHandler(event) {
+        event.preventDefault();
+      }
+      sizeGuideForm.addEventListener('submit', formHandler);
+
+      var submitButton = document.getElementById('size-guide-helper-submit');
+      submitButton.addEventListener('click', showSizeGuide);
+    </script>
+  </body>
+</html>

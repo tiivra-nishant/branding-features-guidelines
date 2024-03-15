@@ -769,3 +769,29 @@ li.flexbox-item p {
   filter: invert(100%);
   width: 2rem;
 }
+
+.size-guide-page-link {
+  width: 100%;
+}
+
+.size-guide-page-link a {
+  text-decoration: none;
+}
+
+.size-guide-page-link a .size-guide-helper-button {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Heading';
+  text-transform: uppercase;
+  border: 3px solid #f8cb23;
+  background: #000;
+  color: #f8cb23;
+}
+
+.size-guide-page-link a .size-guide-helper-button:hover {
+  border: 3px solid #fff;
+  background: #f8cb23;
+  color: #fff;
+  cursor: pointer;
+}
