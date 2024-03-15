@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./helmet-feature-test.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <title>Feature Testing</title>
+  </head>
+  <body>
+    <div class="helmet-feature-showcase-test">
+      <h1>Feature 1</h1>
+      <div class="feature-test-description-parent">
+        <div class="feature-test-description">
+          <p>Features being tested:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Broader section for feature showcase</li>
+            <li>
+              Different typeface (Publica Sans instead of Publica Sans Round)
+            </li>
+            <li>
+              Button/Link color scheme that follows the branding guidelines
+            </li>
+            <li>Ease-in and ease-out animations</li>
+            <li>
+              Blurred and translucent image present in the background that
+              materializes fully upon hover
+            </li>
+          </ul>
+          <p>To-do:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Make the content more responsive</li>
+            <li>
+              Experiment with different content widths to see which works best
+            </li>
+            <li>Experiment with a grid layout similar to Feature Test 3</li>
+            <li>Fix the background image sizing and stretching issue</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flexbox-container">
+        <div class="flexbox-container-background"></div>
+        <h2 class="flexbox-container-heading">
+          India's lightest performance helmet
+        </h2>
+        <p>Composite Fiber for Minimum Weight, Maximum Protection</p>
+        <ul class="flexbox">
+          <li class="flexbox-item">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/Feather_gif.gif?v=1680073055"
+              alt="GIF of a feather moving"
+            />
+            <p><strong>1350g &plusmn; 50</strong> - no more neck fatigue</p>
+          </li>
+          <li class="flexbox-item">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/Air_in_gif.gif?v=1679911441"
+              alt="GIF of layers"
+            />
+            <p>Exceeds ECE standards by <strong>70%</strong> in impact</p>
+          </li>
+          <li class="flexbox-item">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/Helmet_gif.gif?v=1680066405"
+              alt="GIF of wind against helmet"
+            />
+            <p>
+              Optimised for <strong>35&deg; - 65&deg;</strong> aggressive rider
+            </p>
+          </li>
+
+          <li class="flexbox-item">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/Sun_gif.gif?v=1680066437"
+              alt="GIF of sun rays"
+            />
+            <p>Hi-Viz paint system for max-visibility day and night</p>
+          </li>
+        </ul>
+        <a href="./index.html">
+          <button class="helmet-showcase-cta">Shop TIIVRA Helmets</button>
+        </a>
+      </div>
+      <h1>Feature 2</h1>
+      <div class="feature-test-description-parent">
+        <div class="feature-test-description">
+          <p>Features being tested:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Transparent helmet image display without any borders</li>
+            <li>Bright image foreground present on a darker background</li>
+            <li>
+              Comparing of two images side-by-side through the implementation of
+              a slider
+            </li>
+            <li>
+              <span class="issue">[ISSUE]</span> Slider and cursor not moving at
+              an acceptable speed (lagging heavily and lacking
+              smoothness/fluidity in its movement)
+            </li>
+          </ul>
+          <p>To-do:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Smooth out the sliding functionality</li>
+            <li>Center out the section across all device widths</li>
+            <li>
+              Use images that align its elements over one another upon slider
+              interaction
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="helmet-image-compare-section">
+        <div class="helmet-compare-container">
+          <div class="image-compare-container">
+            <div class="image-compare">
+              <img
+                src="./assets/images/buzzy-noir-transparent.png"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="image-compare image-compare-overlay">
+              <img
+                src="./assets/images/xroads-transparent.png"
+                width="400"
+                height="400"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Feature 3</h1>
+      <div class="feature-test-description-parent">
+        <div class="feature-test-description">
+          <p>Features being tested:</p>
+          <ul class="feature-showcase-description-list">
+            <li>
+              Testing out a combination of flexbox and grid-style displays
+            </li>
+            <li>
+              Testing bright background on matching bright background (TIIVRA's
+              primary color)
+            </li>
+            <li>
+              Inverted color schemes - lighter text colors on a darker
+              background
+            </li>
+          </ul>
+          <p>To-do:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Make it more responsive and mobile-friendly</li>
+            <li>
+              Discuss the additional colors used here and accordingly add it to
+              the color scheme in the branding guidelines
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="combined-features-card-section">
+        <div class="combined-container">
+          <div class="combined-wrapper">
+            <div class="card-with-image">
+              <img
+                src="./assets/images/buzzy-noir-transparent.png"
+                alt="TIIVRA Buzzy Noir Helmet"
+                class="combined-feature-image"
+              />
+            </div>
+            <div class="combined-feature-list">
+              <h2 class="combined-feature-heading">
+                India's lightest performance helmet
+              </h2>
+              <p class="combined-feature-description">
+                Composite Fiber for Minimum Weight, Maximum Protection
+              </p>
+              <ul class="container-grid">
+                <li class="grid-box">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/Feather_gif.gif?v=1680073055"
+                    alt="GIF of a feather moving"
+                  />
+                  <p>
+                    <strong>1350g &plusmn; 50</strong> - no more neck fatigue
+                  </p>
+                </li>
+                <li class="grid-box">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/Air_in_gif.gif?v=1679911441"
+                    alt="GIF of layers"
+                  />
+                  <p>Exceeds ECE standards by <strong>70%</strong> in impact</p>
+                </li>
+                <li class="grid-box">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/Helmet_gif.gif?v=1680066405"
+                    alt="GIF of wind against helmet"
+                  />
+                  <p>
+                    Optimised for <strong>35&deg; - 65&deg;</strong> aggressive
+                    rider
+                  </p>
+                </li>
+                <li class="grid-box">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/Sun_gif.gif?v=1680066437"
+                    alt="GIF of sun rays"
+                  />
+                  <p>Hi-Viz paint system for max-visibility day and night</p>
+                </li>
+              </ul>
+              <div class="grid-link">
+                <a href="./index.html">
+                  <button class="helmet-showcase-cta">
+                    Shop TIIVRA Helmets
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Feature 4</h1>
+      <div class="feature-test-description-parent">
+        <div class="feature-test-description">
+          <p>Features being tested:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Card interactions</li>
+          </ul>
+          <p>To-do:</p>
+          <ul class="feature-showcase-description-list">
+            <li>
+              Experiment with different card displays and hover functionalities
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-feature-showcase-section">
+        <div class="card-feature-showcase-parent">
+          <div class="card-feature-showcase-flex">
+            <div class="card-feature-showcase-card card-one">
+              <h3>Move up</h3>
+              <p>Hover on the card to see it move slightly upward</p>
+            </div>
+            <div class="card-feature-showcase-card card-two">
+              <h3>Move left</h3>
+              <p>Hover on the card to see it move slightly to the left</p>
+            </div>
+            <div class="card-feature-showcase-card card-three">
+              <h3>Move right</h3>
+              <p>Hover on the card to see it move slightly to the left</p>
+            </div>
+            <div class="card-feature-showcase-card card-four">
+              <h3>Zoom in</h3>
+              <p>Hover on the card to see it getting zoomed in</p>
+            </div>
+            <div class="card-feature-showcase-card card-five">
+              <h3>Zoom out</h3>
+              <p>Hover on the card to see it getting zoomed out</p>
+            </div>
+            <div class="card-feature-showcase-card card-six">
+              <div class="inner-card">
+                <div class="card-front">
+                  <h3>Flip X</h3>
+                  <p>Hover on the card to see it flip horizontally</p>
+                </div>
+                <div class="card-back">
+                  <h3>Flip X</h3>
+                  <p>Move the mouse away to return it back to its position</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-feature-showcase-card card-seven">
+              <div class="inner-card">
+                <div class="card-front">
+                  <h3>Flip Y</h3>
+                  <p>Hover on the card to see it flip vertically</p>
+                </div>
+                <div class="card-back">
+                  <h3>Flip Y</h3>
+                  <p>Move the mouse away to return it back to its position</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-feature-showcase-card card-eight">
+              <h3>Card Shadow</h3>
+              <p>Hover over the card to see a shadow forming around the box</p>
+            </div>
+            <div class="card-feature-showcase-card card-nine">
+              <h3>Invert Colors</h3>
+              <p>Hover over the card to flip the existing colors</p>
+            </div>
+            <div class="card-feature-showcase-card card-ten">
+              <h3>Focus</h3>
+              <p>Hover over the card to see a border appear</p>
+            </div>
+            <div class="card-feature-showcase-card card-eleven">
+              <h3>Transparency</h3>
+              <p>Hover over the card to make the card transparent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Feature 5</h1>
+      <div class="feature-test-description-parent">
+        <div class="feature-test-description">
+          <p>Features being tested:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Alternate display of individual products</li>
+            <li>Could try being grayscale by default and color on touch</li>
+          </ul>
+          <p>To-do:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Include images for each product</li>
+            <li>
+              Include a short description copy following each product image
+            </li>
+            <li>
+              Pair the description with a CTA to direct visitors to the page
+            </li>
+            <li>Test with different image widths and heights</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-feature-showcase-section">
+        <div class="product-showcase-parent">
+          <div class="product-showcase-flex">
+            <div class="product-showcase-card product-card-one">
+              <div class="product-showcase-image">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/gloves.webp"
+                  alt="TIIVRA Gloves"
+                />
+              </div>
+              <div class="product-showcase-details">
+                <h3 class="product-showcase-heading">Gloves</h3>
+                <p class="product-showcase-description">
+                  Street Gloves for the urban commuter and Dual Sport Gloves for
+                  the on and off-road commuter in 4 breakout designs. With
+                  excellent ventilation, dexterity and all-fingers touch
+                  compatibility, you can keep them on no matter what activity.
+                </p>
+                <button class="product-showcase-cta">Shop Gloves</button>
+              </div>
+            </div>
+            <div class="product-showcase-card product-card-two">
+              <div class="product-showcase-image">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0526/2688/2746/files/balaclava-1.jpg"
+                  alt="TIIVRA Balaclava"
+                />
+              </div>
+              <div class="product-showcase-details">
+                <h3 class="product-showcase-heading">Balaclavas</h3>
+                <p class="product-showcase-description">
+                  What do Ninja warriors, special forces, F1 drivers and
+                  motorcycle riders have in common? Balaclavas! It&#39;s
+                  innerwear for your head, and if you generally don&#39;t go
+                  commando, then why should your head?
+                </p>
+                <button class="product-showcase-cta">Shop Balaclavas</button>
+              </div>
+            </div>
+            <div class="product-showcase-card product-card-three">
+              <div class="product-showcase-image">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0526/2688/2746/products/sleeve_1_9db6d55f-60b0-476a-9380-fc500148131b.jpg"
+                  alt="TIIVRA Arm Sleeves"
+                />
+              </div>
+              <div class="product-showcase-details">
+                <h3 class="product-showcase-heading">Arm Sleeves</h3>
+                <p class="product-showcase-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur consequuntur explicabo rem, quia dolorem aperiam,
+                  quo molestias accusantium quaerat voluptatibus quae iure.
+                </p>
+                <button class="product-showcase-cta">Shop Sleeves</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-showcase-cta-all">
+            <button class="browse-all-products-cta">Browse All Products</button>
+          </div>
+        </div>
+      </div>
+      <h1>Feature 6</h1>
+      <div class="feature-test-description-parent">
+        <div class="feature-test-description">
+          <p>Features being tested:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Alternate display of the hero section</li>
+            <li>
+              Experimenting with 'blending' part of the hero section image with
+              the rest of the hero section
+            </li>
+          </ul>
+          <p>To-do:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Experiment with different images</li>
+            <li>
+              Transform existing image color space to our brand color scheme
+            </li>
+            <li>Experiment with solid colors and gradients both</li>
+            <li>Test with different image widths and heights</li>
+          </ul>
+        </div>
+      </div>
+      <div class="background-text-blend-feature-section">
+        <div class="background-text-image-blend-parent">
+          <div class="background-text-blend-hero-image">
+            <img src="./assets/images/hero-section-trial-1.png" />
+          </div>
+          <div class="background-text-blend-hero-details">
+            <sub>&#35;fckordinary</sub>
+            <h2>Riding feels like flying</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+              dignissimos sapiente. Quae architecto temporibus ab voluptas
+              autem, distinctio animi?
+            </p>
+            <a href="#">
+              <button>Shop Helmets</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h1>Feature 7</h1>
+      <div class="feature-test-description-parent">
+        <div class="feature-test-description">
+          <p>Features being tested:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Alternate hero section</li>
+          </ul>
+          <p>To-do:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Side-by-side display of Gear versus Helmets</li>
+          </ul>
+        </div>
+      </div>
+      <div class="alternate-hero-testing-showcase-section">
+        <div class="alternate-hero-section-parent">
+          <div class="alternate-hero-section-navbar-parent">
+            <ul class="alternate-hero-section-navbar main-icon">
+              <li>
+                <img src="./assets/images/tiivra-logo.png" alt="Tiivra Logo" />
+              </li>
+            </ul>
+            <ul class="alternate-hero-section-navbar main-list-of-links">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Difference</li>
+              <li>Why Tiivra</li>
+              <li>All Products</li>
+            </ul>
+            <ul class="alternate-hero-section-navbar main-account-cart">
+              <li>
+                <img
+                  src="./assets/images/account-icon.png"
+                  alt="User account icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/images/cart-icon.png"
+                  alt="Shopping cart icon"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="alternate-hero-section-flexbox">
+            <div class="alternate-hero-section-one">
+              <img
+                src="./assets/images/Helmet.jpg"
+                alt="Man wearing a Tiivra helmet"
+              />
+              <button>Shop Helmets</button>
+            </div>
+            <div class="alternate-hero-section-two">
+              <img
+                src="./assets/images/gloves.webp"
+                alt="Man wearing Tiivra gloves"
+              />
+              <button>Shop Gear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Feature 8</h1>
+      <div class="feature-test-description-parent">
+        <div class="feature-test-description">
+          <p>Features being tested:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Alternate display of the navbar menu</li>
+            <li>Testing out different menu categorizations</li>
+          </ul>
+          <p>To-do:</p>
+          <ul class="feature-showcase-description-list">
+            <li>Try with different menu list item placement</li>
+          </ul>
+        </div>
+      </div>
+      <div class="alternate-menu-dropdown-test-section">
+        <div class="alternate-menu-dropdown-test-parent">
+          <div class="alternate-menu-dropdown-test-navbar">
+            <div class="main-tiivra-logo">
+              <img src="./assets/images/tiivra-logo.png" alt="Tiivra Logo" />
+            </div>
+            <ul class="test-navbar-links">
+              <li>Home</li>
+              <li class="all-products-parent">
+                Products
+                <img
+                  src="./assets/images/down-arrow-icon.png"
+                  alt="Down Arrow Icon"
+                />
+                <ul class="all-products-children">
+                  <li>Helmets &#187;</li>
+                  <li>Jerseys &#187;</li>
+                  <li>Balaclavas &#187;</li>
+                  <li>Arm Sleeves &#187;</li>
+                  <li>Gloves &#187;</li>
+                  <li>Helmet Accessories &#187;</li>
+                  <li>Bags &#187;</li>
+                  <li>Compression Socks &#187;</li>
+                  <li>Riding Eyewear &#187;</li>
+                </ul>
+              </li>
+              <li>About Us</li>
+              <li>Difference</li>
+            </ul>
+            <ul class="account-and-shopping-cart">
+              <li>
+                <img
+                  src="./assets/images/account-icon.png"
+                  alt="Account Icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/images/cart-icon.png"
+                  alt="Shopping Cart Icon"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./helmet-feature-test.js"></script>
+  </body>
+</html>
