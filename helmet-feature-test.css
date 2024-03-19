@@ -433,6 +433,24 @@ li.flexbox-item p {
   color: lightgray;
 }
 
+.card-twelve img {
+  transform: rotate(-25deg);
+  width: 60%;
+  display: block;
+  position: relative;
+  margin: 2rem auto;
+}
+
+.card-twelve p {
+  margin-top: 1rem;
+}
+
+.card-twelve:hover img {
+  transform: rotate(0);
+  margin-top: -4px;
+  transform: scale(1.2);
+}
+
 .card-feature-showcase-card:hover {
   transition: all 0.3s ease-in-out;
 }

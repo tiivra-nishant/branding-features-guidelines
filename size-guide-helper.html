@@ -19,6 +19,9 @@
             name="helmetSizeInput"
             placeholder="55"
             step="0.01"
+            min="55"
+            max="62"
+            onchange="helmetSizeInputChangeHandler"
           />
           <!-- <h2>Gloves</h2> -->
           <label for="gloveSizeInput">Enter your palm size (in inches)</label>
@@ -27,6 +30,8 @@
             id="gloveSizeInput"
             name="gloveSizeInput"
             placeholder="7.5"
+            min="7.5"
+            max="8.7"
             step="0.01"
           />
           <!-- <h2>Arm Sleeves</h2> -->
@@ -38,7 +43,9 @@
             id="sleeveSizeInput"
             name="sleeveSizeInput"
             placeholder="10"
-            step="0.01"
+            min="10"
+            max="13"
+            step="3"
           />
           <!-- <h2>Jerseys</h2> -->
           <label for="jerseySizeInput"
@@ -49,6 +56,8 @@
             id="jerseySizeInput"
             name="jerseySizeInput"
             placeholder="14"
+            min="14"
+            max="19.9"
             step="0.01"
           />
           <!-- <h2>Compression Socks</h2> -->
@@ -58,7 +67,9 @@
             id="sockSizeInput"
             name="sockSizeInput"
             placeholder="6.5"
-            step="0.01"
+            min="6.5"
+            max="12"
+            step="0.5"
           />
           <button id="size-guide-helper-submit" type="submit">
             Check your size
@@ -86,6 +97,13 @@
 
       var submitButton = document.getElementById('size-guide-helper-submit');
       submitButton.addEventListener('click', showSizeGuide);
+
+      function helmetSizeInputChangeHandler () {
+        console.log('Hello World');
+      } 
+
+      // var helmetSizeInputElement = document.getElementById('helmetSizeInput');
+      // helmetSizeInputElement.addEventListener('change', helmetSizeInputChangeHandler);
     </script>
   </body>
 </html>
