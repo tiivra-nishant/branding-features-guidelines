@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./helmet-feature-test.css" type="text/css" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/css/magnify.min.css"
+      referrerpolicy="no-referrer"
+    />
     <title>Feature Testing</title>
   </head>
   <body>
@@ -565,6 +570,82 @@
             </a>
           </div>
         </div>
+      </div>
+      <h1>Feature 9</h1>
+      <div class="feature-test-description-parent">
+        <div class="feature-test-description">
+          <p>Features being tested:</p>
+          <ul class="feature-showcase-description-list">
+            <li>[DONE] Zoom-in on a section of image</li>
+          </ul>
+          <p>To-do:</p>
+          <ul class="feature-showcase-description-list">
+            <li>[DONE] Change the image being featured upon clicking an image</li>
+          </ul>
+        </div>
+      </div>
+      <div class="image-hover-magnification-test-section">
+        <img
+          src="./assets/images/buzzy-noir-transparent.png"
+          class="zoom"
+          data-magnify-src="./assets/images/buzzy-noir-transparent-large.png"
+          alt="Buzzy Noir Helmet" id="imageZoom"
+        />
+        <div class="helmet-hover-magnification-buttons">
+          <button id="buzzy-noir" onclick="imageZoomHandler('buzzy-noir')">
+            Buzzy Noir
+          </button>
+          <button id="x-roads" onclick="imageZoomHandler('x-roads')">
+            XRoads
+          </button>
+          <button id="sabre" onclick="imageZoomHandler('sabre')">
+            Sabre
+          </button>
+          <button id="razztazz" onclick="imageZoomHandler('razztazz')">
+            RazzTazz
+          </button>
+          <button id="demon" onclick="imageZoomHandler('demon')">
+            Demon
+          </button>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $(".zoom").magnify();
+          });
+
+          const details = {
+            'buzzy-noir': {
+              'base': './assets/images/buzzy-noir-transparent.png',
+              'zoomed': './assets/images/buzzy-noir-transparent-large.png'
+            },
+            'x-roads': {
+              'base': './assets/images/xroads-transparent.png',
+              'zoomed': './assets/images/xroads-transparent-large.png'
+            },
+            'sabre': {
+              'base': './assets/images/sabre-transparent.png',
+              'zoomed': './assets/images/sabre-transparent-large.png'
+            },
+            'razztazz': {
+              'base': './assets/images/razztazz-transparent.png',
+              'zoomed': './assets/images/razztazz-transparent-large.png'
+            },
+            'demon': {
+              'base': './assets/images/demon-transparent.png',
+              'zoomed': './assets/images/demon-transparent-large.png'
+            }
+          }
+
+          const imageZoomHandler = (imageZoomId) => {
+            var imageZoom = document.getElementById('imageZoom');
+            $('#imageZoom').attr('src', details[imageZoomId]['base']);
+            $('#imageZoom').attr('data-magnify-src', details[imageZoomId]['zoomed']);
+            $('#imageZoom').magnify();
+          }
+        </script>
       </div>
     </div>
     <script src="./helmet-feature-test.js"></script>

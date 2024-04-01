@@ -848,3 +848,35 @@ li.flexbox-item p {
   color: #fff;
   cursor: pointer;
 }
+
+.image-hover-magnification-test-section {
+  width: 100%;
+  padding: 2rem;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.helmet-hover-magnification-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.helmet-hover-magnification-buttons button {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 3px solid #f8cb23;
+  background: rgba(0, 0, 0, 0);
+  color: #f8cb23;
+}
+
+.helmet-hover-magnification-buttons button:hover {
+  color: #fff;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
