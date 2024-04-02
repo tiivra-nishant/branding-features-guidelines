@@ -576,20 +576,28 @@
         <div class="feature-test-description">
           <p>Features being tested:</p>
           <ul class="feature-showcase-description-list">
-            <li>[DONE] Zoom-in on a section of image</li>
+            <li>[DONE] Zoom-in on a section of image upon hover</li>
           </ul>
           <p>To-do:</p>
           <ul class="feature-showcase-description-list">
-            <li>[DONE] Change the image being featured upon clicking an image</li>
+            <li>
+              [DONE] Change the image being featured upon clicking an image
+            </li>
+            <li>[DONE] Reduce the blur on initial image load and upon hover</li>
+            <li>
+              [DONE] Reduce the shift of images when different helmets are
+              clicked
+            </li>
           </ul>
         </div>
       </div>
       <div class="image-hover-magnification-test-section">
         <img
-          src="./assets/images/buzzy-noir-transparent.png"
+          src="./assets/images/helmet-zoom/buzzy-noir.png"
           class="zoom"
-          data-magnify-src="./assets/images/buzzy-noir-transparent-large.png"
-          alt="Buzzy Noir Helmet" id="imageZoom"
+          data-magnify-src="./assets/images/helmet-zoom/buzzy-noir-large.png"
+          alt="Buzzy Noir Helmet"
+          id="imageZoom"
         />
         <div class="helmet-hover-magnification-buttons">
           <button id="buzzy-noir" onclick="imageZoomHandler('buzzy-noir')">
@@ -598,15 +606,11 @@
           <button id="x-roads" onclick="imageZoomHandler('x-roads')">
             XRoads
           </button>
-          <button id="sabre" onclick="imageZoomHandler('sabre')">
-            Sabre
-          </button>
+          <button id="sabre" onclick="imageZoomHandler('sabre')">Sabre</button>
           <button id="razztazz" onclick="imageZoomHandler('razztazz')">
             RazzTazz
           </button>
-          <button id="demon" onclick="imageZoomHandler('demon')">
-            Demon
-          </button>
+          <button id="demon" onclick="imageZoomHandler('demon')">Demon</button>
         </div>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -617,34 +621,37 @@
           });
 
           const details = {
-            'buzzy-noir': {
-              'base': './assets/images/buzzy-noir-transparent.png',
-              'zoomed': './assets/images/buzzy-noir-transparent-large.png'
+            "buzzy-noir": {
+              base: "./assets/images/helmet-zoom/buzzy-noir.png",
+              zoomed: "./assets/images/helmet-zoom/buzzy-noir-large.png",
             },
-            'x-roads': {
-              'base': './assets/images/xroads-transparent.png',
-              'zoomed': './assets/images/xroads-transparent-large.png'
+            "x-roads": {
+              base: "./assets/images/helmet-zoom/x-roads.png",
+              zoomed: "./assets/images/helmet-zoom/x-roads-large.png",
             },
-            'sabre': {
-              'base': './assets/images/sabre-transparent.png',
-              'zoomed': './assets/images/sabre-transparent-large.png'
+            sabre: {
+              base: "./assets/images/helmet-zoom/sabre.png",
+              zoomed: "./assets/images/helmet-zoom/sabre-large.png",
             },
-            'razztazz': {
-              'base': './assets/images/razztazz-transparent.png',
-              'zoomed': './assets/images/razztazz-transparent-large.png'
+            razztazz: {
+              base: "./assets/images/helmet-zoom/razztazz.png",
+              zoomed: "./assets/images/helmet-zoom/razztazz-large.png",
             },
-            'demon': {
-              'base': './assets/images/demon-transparent.png',
-              'zoomed': './assets/images/demon-transparent-large.png'
-            }
-          }
+            demon: {
+              base: "./assets/images/helmet-zoom/demon.png",
+              zoomed: "./assets/images/helmet-zoom/demon-large.png",
+            },
+          };
 
           const imageZoomHandler = (imageZoomId) => {
-            var imageZoom = document.getElementById('imageZoom');
-            $('#imageZoom').attr('src', details[imageZoomId]['base']);
-            $('#imageZoom').attr('data-magnify-src', details[imageZoomId]['zoomed']);
-            $('#imageZoom').magnify();
-          }
+            var imageZoom = document.getElementById("imageZoom");
+            $("#imageZoom").attr("src", details[imageZoomId]["base"]);
+            $("#imageZoom").attr(
+              "data-magnify-src",
+              details[imageZoomId]["zoomed"]
+            );
+            $("#imageZoom").magnify();
+          };
         </script>
       </div>
     </div>
